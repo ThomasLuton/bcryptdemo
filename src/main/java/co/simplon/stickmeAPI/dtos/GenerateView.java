@@ -5,6 +5,11 @@ public class GenerateView {
     private String hash;
     private String salt;
 
+    public GenerateView() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
+
     public String getHash() {
 	return hash;
     }
@@ -21,9 +26,9 @@ public class GenerateView {
 	this.salt = salt;
     }
 
-    public GenerateView() {
-	super();
-	// TODO Auto-generated constructor stub
+    @Override
+    public String toString() {
+	return "{hash=" + hash + ", salt=" + salt + "}";
     }
 
 }

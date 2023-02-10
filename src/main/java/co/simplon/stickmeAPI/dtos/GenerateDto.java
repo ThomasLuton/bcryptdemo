@@ -5,6 +5,11 @@ public class GenerateDto {
     private String password;
     private int cost;
 
+    public GenerateDto() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
+
     public String getPassword() {
 	return password;
     }
@@ -21,9 +26,10 @@ public class GenerateDto {
 	this.cost = cost;
     }
 
-    public GenerateDto() {
-	super();
-	// TODO Auto-generated constructor stub
+    @Override
+    public String toString() {
+	return "{password=" + password + ", cost=" + cost
+		+ "}";
     }
 
 }
